@@ -1,0 +1,125 @@
+@media only screen and (max-width: 660px) {
+    .container {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 10px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "left-area"
+          "central-area"
+          "right-area";
+      }
+      
+      .left-area {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "image-1"
+          "image-2";
+        grid-area: left-area;
+      }
+      
+      .image-1 { grid-area: image-1; }
+      
+      .image-2 { grid-area: image-2; }
+      
+      .central-area {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "image-3"
+          "image-4";
+        grid-area: central-area;
+      }
+      
+      .image-3 { grid-area: image-3; }
+      
+      .image-4 { grid-area: image-4; }
+      
+      .right-area {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "image-5"
+          "image-6";
+        grid-area: right-area;
+      }
+      
+      .image-5 { grid-area: image-5; }
+      
+      .image-6 { grid-area: image-6; }
+      
+}
+
+
+@media only screen and (min-width: 900px){
+    .container {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "left-area central-area right-area"
+          "left-area central-area right-area";
+      }
+      
+      .left-area {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+        gap: 10px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "image-1"
+          "image-2";
+        grid-area: left-area;
+      }
+      
+      .image-1 { grid-area: image-1; }
+      
+      .image-2 { grid-area: image-2; }
+      
+      .central-area {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+        gap: 10px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "image-3"
+          "image-4";
+        grid-area: central-area;
+      }
+      
+      .image-3 { grid-area: image-3; }
+      
+      .image-4 { grid-area: image-4; }
+      
+      .right-area {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+        gap: 10px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "image-5"
+          "image-6";
+        grid-area: right-area;
+      }
+      
+      .image-5 { grid-area: image-5; }
+      
+      .image-6 { grid-area: image-6; }
+    
+}
+
+
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
